@@ -1,9 +1,6 @@
 androidtraining-intents
 =======================
 
-
-#Training Intents:
-
 Este proyecto consiste de un `Activity` que tiene 3 botones. Cada uno de estos botones por ahora no
 hace nada. La idea del ejercicio es que implementen las siguientes acciones:
 
