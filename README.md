@@ -3,7 +3,7 @@
 Este proyecto consiste de un `Activity` que tiene 3 botones que no funcionan. 
 Cambiemos eso; implementemos las siguientes acciones:
 
-- Botón 1: Al presionarlo, 'MainActivity' debería mandar un DTO `Person` a 
+- Botón 1: Al presionarlo, `MainActivity` debería mandar un DTO `Person` a 
 `DetailActivity`; esta  debería mostrar la información del DTO.
 - Botón 2: Al presionarlo, `MainActivity` debería enviar un DTO `Person` a 
 `EditableActivity`; esta permite editar la información del objeto `Person`.
