@@ -1,24 +1,24 @@
-androidtraining-intents
-=======================
+#Training: Intents
 
-Este proyecto consiste de un `Activity` que tiene 3 botones. Cada uno de estos botones por ahora no
-hace nada. La idea del ejercicio es que implementen las siguientes acciones:
+Este proyecto consiste de un `Activity` que tiene 3 botones que no funcionan. 
+Cambiemos eso; implementemos las siguientes acciones:
 
-- Botón 1: Al presionarlo, 'MainActivity' debería mandar un DTO persona a la activity
-'DetailActivity', la cual debería mostrar la información del DTO.
-- Botón 2: Al presionarlo, abre la vista de edición 'EditableActivity' la cual permite editar
-la información del DTO Persona que se pasa a dicha activity. Una vez realizados los cambios, oprimir
-el botón 'Guardar', el cual debería llevarte de vuelta a 'MainActivity'. Una vez en dicha activity,
+- Botón 1: Al presionarlo, 'MainActivity' debería mandar un DTO `Person` a 
+'DetailActivity'; esta  debería mostrar la información del DTO.
+- Botón 2: Al presionarlo, `MainActivity` debería enviar un DTO `Person` a 
+'EditableActivity'; esta permite editar la información del objeto `Person`.
+`EditableActivity` consiste de un formulario similar al utilizado en 
+[androidtraining-fragments](https://github.com/wmora/androidtraining-fragments). El formulario
+deberia tener un boton de "Guardar" el cual debería llevarte de vuelta a 'MainActivity'. Una vez en ella,
 mostrar un [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html) con los
-nuevos valores de la persona. Dicho [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html),
+nuevos valores del objeto `Person`. Dicho [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html),
 debería mostrarse solo si hubo cambios en la información de la persona. Si no hubo cambios,
-no se muestra nada. Debes indicar que el DTO fue modificado, usando un result code. TIP: mirar
+no se muestra nada. IMPORTANTE: Debes indicar que el DTO fue modificado, *utilizando un result code*. TIP: mirar
 [onActivityResult]
 (http://developer.android.com/reference/android/app/Activity.html#onActivityResult(int, int, android.content.Intent))
-- Botón 3: Al presionarlo, abre la VIP de la app de Meli con un itemID de tu preferencia.
-
-
-Ademas, somos metiches y queremos que nuestra aplicación sea usada por espías y revisar cuando se
+- Botón 3: Al presionarlo, abre la VIP de la app de Meli con un itemID de tu preferencia. Debes tener
+la app instalada para probar esto
+- Queremos que nuestra aplicación sea usada por espías y revisar cuando se
 va a realizar una llamada. Para lograr esto, debemos soportar el evento, usando un
 [common intent](https://developer.android.com/guide/components/intents-common.html). Una vez que nuestra activity intercepto el evento, mostrar en un
 [Toast](http://developer.android.com/guide/topics/ui/notifiers/toasts.html) el numero de telefono.
