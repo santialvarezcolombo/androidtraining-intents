@@ -5,6 +5,8 @@
     <string name="welcome">Bienvenidos al Training de Intents!</string>
     <string name="button1">Launch DetailActivity</string>
     <string name="button2">Launch EditableActivity</string>
-    <string name="button3">Open Meli VIP</string>
+    <string name="button3">Open Meli Search</string>
+    <string name="compose_message_label">Edita el texto para compartir</string>
+    <string name="share">Compartir</string>
 
 </resources>
